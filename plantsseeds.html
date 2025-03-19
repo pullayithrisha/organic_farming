@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants & Seeds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body {
+            background-color: rgba(101, 162, 101, 0.7);
+            font-family: Georgia, 'Times New Roman', Times, serif;      
+        }
+        .navbar {
+            background: #264d26;
+            padding: 12px 0;
+        }
+        .navbar-brand {
+            font-size: 22px;
+            font-weight: bold;
+            color: #f8f8f8 !important;
+        }
+        .navbar-nav .nav-item {
+            margin: 0 5px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            color: #ffffff !important;
+            font-weight: bold;
+            padding: 3px 1px;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            background-color:#3d673d;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border: solid white 1px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height */
+            object-fit: contain; 
+        }
+        .card-title {
+            font-weight: bold;
+            color: white;
+        }
+        .card-text {
+            font-size: 14px;
+            color:white;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        .btn-buy {
+            background: #264d26;
+            color: white;
+            border-radius: 6px;
+        }
+        .btn-buy:hover {
+            background: #1e3d1e;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Organic Farming Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fruits_vegetables.html">Fruits & Vegetables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="milk.html">Milk & Dairy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Plants & Seeds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compostfertilizers.html">Compost & Fertilizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:black;">Plants & Seeds</h2>
+        
+        <div class="row">
+            <!-- 12 Plant & Seed Cards -->
+            <script>
+                let products = [
+                    {name: "Tomato Seeds", image: "images/tomatoseeds.jpeg", price: "₹50"},
+                    {name: "Chili Seeds", image: "images/chilliseeds.jpeg", price: "₹60"},
+                    {name: "Tulsi Plant", image: "images/tulsiplant.jpeg", price: "₹100"},
+                    {name: "Guava Sapling", image: "images/guavasapling.jpeg", price: "₹180"},
+                    {name: "Rose Plant", image: "images/roseplant.jpeg", price: "₹300"},
+                    {name: "Marigold Plant", image: "images/marigold.jpeg", price: "₹180"}
+                ];
+                let container = document.querySelector('.row');
+                products.forEach(product => {
+                    container.innerHTML += `
+                        <div class="col-md-4 mt-4">
+                            <div class="card">
+                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">${product.name}</h5>
+                                    <p class="price">${product.price}</p>
+                                    <button class="btn btn-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>

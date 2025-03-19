@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk & Dairy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body {
+            background-color: rgba(101, 162, 101, 0.7);
+            font-family: Georgia, 'Times New Roman', Times, serif;      
+        }
+        .navbar {
+            background: #264d26;
+            padding: 12px 0;
+        }
+        .navbar-brand {
+            font-size: 22px;
+            font-weight: bold;
+            color: #f8f8f8 !important;
+        }
+        .navbar-nav .nav-item {
+            margin: 0 5px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            color: #ffffff !important;
+            font-weight: bold;
+            padding: 3px 1px;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            font-weight: bold;
+            background-color:#3d673d;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: solid white 1px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; 
+        }
+        .card-title, .card-text, .price {
+            color: white;
+            font-weight: bold;
+        }
+        .btn-buy {
+            background: #264d26;
+            color: white;          
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        .btn-buy:hover {
+            background: #1e3d1e;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Organic Farming Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fruitsveg.html">Fruits & Vegetables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Milk & Dairy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plantsseeds.html">Plants & Seeds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compostfertilizers.html">Compost & Fertilizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:black;">Milk & Dairy Products</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/milkimg.jpeg" class="card-img-top" alt="Milk">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Organic Milk</h5>
+                        <p class="card-text">Pure and fresh cow milk.</p>
+                        <p class="price">₹60/litre</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/cheeseimg.jpeg" class="card-img-top" alt="Cheese">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fresh Cheese</h5>
+                        <p class="card-text">Creamy and organic cheese.</p>
+                        <p class="price">₹150/250g</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/butterimg.jpeg" class="card-img-top" alt="Butter">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Organic Butter</h5>
+                        <p class="card-text">Made from fresh cream.</p>
+                        <p class="price">₹120/500g</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="images/curdimg.jpeg" class="card-img-top" alt="Curd">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fresh Curd</h5>
+                        <p class="card-text">Thick and creamy organic curd.</p>
+                        <p class="price">₹50/kg</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="images/pannerimg.jpeg" class="card-img-top" alt="Paneer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fresh Paneer</h5>
+                        <p class="card-text">Soft and organic paneer.</p>
+                        <p class="price">₹180/kg</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="images/gheeimg.jpeg" class="card-img-top" alt="Ghee">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pure Ghee</h5>
+                        <p class="card-text">Traditional cow ghee.</p>
+                        <p class="price">₹600/litre</p>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
