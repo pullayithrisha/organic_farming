@@ -9,31 +9,39 @@
     
     <style>
         body {
-            background-color: rgba(101, 162, 101, 0.7);
-            font-family: Georgia, 'Times New Roman', Times, serif;      
-        }
-        .navbar {
-            background: #264d26;
-            padding: 12px 0;
-        }
-        .navbar-brand {
-            font-size: 22px;
-            font-weight: bold;
-            color: #f8f8f8 !important;
-        }
-        .navbar-nav .nav-item {
-            margin: 0 5px;
-        }
-        .navbar-nav .nav-link {
-            font-size: 16px;
-            color: #ffffff !important;
-            font-weight: bold;
-            padding: 3px 1px;
-            border: 1px solid #ffffff;
-            border-radius: 6px;
-        }
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(101, 162, 101, 0.7);
+}
+.navbar {
+    background: #264d26;
+    padding: 8px 0;  /* Reduced padding */
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f8f8f8 !important;
+    padding: 5px 10px;  /* Adjusted padding */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 3px;  /* Reduced margin */
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 6px 10px;  /* Adjusted padding */
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
         .container {
             margin-top: 20px;
+            margin-bottom: 50px;
         }
         .card {
             background-color:#3d673d;
@@ -61,6 +69,27 @@
         .btn-buy:hover {
             background: #1e3d1e;
         }
+        footer {
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+footer a:hover {
+    transform: scale(1.2);
+    color: #4CAF50;
+}
     </style>
 </head>
 <body>
@@ -155,5 +184,16 @@
             </div>
         </div>
     </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Organic Farming Store | All Rights Reserved</p>
+        <p>Follow us on social media:</p>
+        <p>
+            <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/?lang=en" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
 </body>
 </html>
